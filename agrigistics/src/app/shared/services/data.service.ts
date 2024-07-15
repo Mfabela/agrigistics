@@ -6,11 +6,21 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class DataService {
+  
+  private userData = 'assets/data/json/user.json';
+  private emplpyeeData = 'assets/data/json/employees.json';
+
+  
 
   constructor(private http: HttpClient) { }
   
-  getData(): Observable<any>{
-    return this.http.get<any>('https://dummyjson.com/users');
+  getEmployeeData(): Observable<any>{
+    return this.http.get<any>(this.emplpyeeData);
+  }
+
+
+  getUserData(): Observable<any>{
+    return this.http.get<any>(this.userData);
   }
 
 }

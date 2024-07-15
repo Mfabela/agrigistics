@@ -7,6 +7,9 @@ import { DataService } from '../../../shared/services/data.service';
   styleUrl: './dashboard.component.scss'
 })
 export class DashboardComponent implements OnInit {
+  
+  employees: any[] = [];
+  user: any;
 
   constructor(private dataService: DataService){
 
@@ -14,9 +17,17 @@ export class DashboardComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.dataService.getData().subscribe(res => {
+
+    this.dataService.getEmployeeData().subscribe(res => {
+      console.log(res);
+      this.employees = res.employees;
+    })
+
+    this.dataService.getUserData().subscribe(res => {
+      this.user = res;
       console.log(res);
     })
+
   }
 
 }

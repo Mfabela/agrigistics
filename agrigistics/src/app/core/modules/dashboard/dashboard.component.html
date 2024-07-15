@@ -1,1 +1,14 @@
 <p>dashboard works!</p>
+<p>{{user.firstName}}</p>
+<p>{{user.totalDeductions + user.netTotal | currency:'R '}}</p>
+<p>{{user.totalDeductions | currency:'R '}}</p>
+<p>{{user.netTotal | currency:'R '}}</p>
+<p>{{user.uif | currency:'R '}}</p>
+<p>{{user.paye | currency:'R '}}</p>
+<p>{{user.total | currency:'R '}}</p>
+
+<div *ngFor="let employee of employees">
+    <p>{{employee.id}}</p>
+    <p>{{employee.firstName}}</p>
+    <p>{{employee.email}}</p>
+</div>
