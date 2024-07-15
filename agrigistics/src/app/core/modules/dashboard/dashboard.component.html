@@ -8,7 +8,10 @@
 <p>{{user.total | currency:'R '}}</p>
 
 <div *ngFor="let employee of employees">
-    <p>{{employee.id}}</p>
-    <p>{{employee.firstName}}</p>
-    <p>{{employee.email}}</p>
+    <p>{{employee.role}}</p>
+    <p>{{employee.description}}</p> 
+    <p>{{employee.type}}</p>      
+    <p>{{employee.quantity}}</p>
+    <p>{{employee.rate | currency:'R '}}</p>
+    <p>{{employee.primaryAction}}</p>
 </div>
