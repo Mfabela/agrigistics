@@ -1,5 +1,4 @@
-{
-    "employees":[
+[
        {
           "id":1,
           "firstName":"Emily",
@@ -18,7 +17,8 @@
           "type":"Group 1",
           "quantity":3,
           "rate":20.00,
-          "primaryAction":"Action 1"
+          "primaryAction":"Action 1",
+          "caution":true
        },
        {
           "id":2,
@@ -38,7 +38,8 @@
           "type":"Group 1",
           "quantity":3,
           "rate":20,
-          "primaryAction":"Action 1"
+          "primaryAction":"Action 1",
+          "caution":false
        },
        {
           "id":3,
@@ -58,7 +59,8 @@
           "type":"Group 2",
           "quantity":4,
           "rate":45.00,
-          "primaryAction":"Action 2"
+          "primaryAction":"Action 2",
+          "caution":false
        },
        {
           "id":4,
@@ -78,7 +80,8 @@
           "type":"Group 3",
           "quantity":6,
           "rate":400.00,
-          "primaryAction":"Action 3"
+          "primaryAction":"Action 3",
+          "caution":true
        },
        {
           "id":5,
@@ -98,7 +101,8 @@
           "type":"Group 3",
           "quantity":3,
           "rate":599.00,
-          "primaryAction":"Action 4"
+          "primaryAction":"Action 4",
+          "caution":false
        },
        {
           "id":6,
@@ -118,7 +122,8 @@
           "type":"Group 5",
           "quantity":4,
           "rate":60.00,
-          "primaryAction":"Action 5"
+          "primaryAction":"Action 5",
+          "caution":false
        },
        {
           "id":7,
@@ -138,7 +143,8 @@
           "type":"Group 6",
           "quantity":6,
           "rate":60.00,
-          "primaryAction":"Action 6"
+          "primaryAction":"Action 6",
+          "caution":true
        },
        {
           "id":8,
@@ -158,7 +164,8 @@
           "type":"Group 4",
           "quantity":3,
           "rate":80.00,
-          "primaryAction":"Action 5"
+          "primaryAction":"Action 5",
+          "caution":false
        },
        {
           "id":9,
@@ -178,7 +185,8 @@
           "type":"Group 4",
           "quantity":6,
           "rate":100,
-          "primaryAction":"Action 6"
+          "primaryAction":"Action 6",
+          "caution":true
        },
        {
           "id":10,
@@ -198,7 +206,8 @@
           "type":"Group 4",
           "quantity":5,
           "rate":250,
-          "primaryAction":"Action 7"
+          "primaryAction":"Action 7",
+          "caution":true
        },
        {
           "id":11,
@@ -218,9 +227,7 @@
           "type":"Group 5",
           "quantity":6,
           "rate":325,
-          "primaryAction":"Action 8"
+          "primaryAction":"Action 8",
+          "caution":false
        }
-    ],
-    "total":11,
-    "limit":11
- }
+    ]

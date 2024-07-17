@@ -3,10 +3,17 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
+    path:'',
+    loadChildren: () => import('./core/modules/dashboard/dashboard.module').then((m) => m.DashboardModule),
+  },
+  {
     path:'dashboard',
     loadChildren: () => import('./core/modules/dashboard/dashboard.module').then((m) => m.DashboardModule),
-    //canActivate: [AuthGuard]
-  }
+  },
+  {
+    path:'**',
+    loadChildren: () => import('./core/modules/dashboard/dashboard.module').then((m) => m.DashboardModule),
+  },
 ];
 
 @NgModule({

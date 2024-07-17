@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../../shared/services/data.service';
+import { Employee, User } from '../../../shared/models/user.model';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,8 +9,8 @@ import { DataService } from '../../../shared/services/data.service';
 })
 export class DashboardComponent implements OnInit {
   
-  employees: any[] = [];
-  user: any;
+  employees: Employee[] = [];
+  user: User;
 
   constructor(private dataService: DataService){
 
@@ -20,7 +21,7 @@ export class DashboardComponent implements OnInit {
 
     this.dataService.getEmployeeData().subscribe(res => {
       console.log(res);
-      this.employees = res.employees;
+      this.employees = res;
     })
 
     this.dataService.getUserData().subscribe(res => {

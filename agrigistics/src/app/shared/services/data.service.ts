@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { User, Employee } from '../models/user.model';
 
 @Injectable({
   providedIn: 'root'
@@ -14,13 +15,13 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
   
-  getEmployeeData(): Observable<any>{
-    return this.http.get<any>(this.emplpyeeData);
+  getEmployeeData(): Observable<Employee[]>{
+    return this.http.get<Employee[]>(this.emplpyeeData);
   }
 
 
-  getUserData(): Observable<any>{
-    return this.http.get<any>(this.userData);
+  getUserData(): Observable<User>{
+    return this.http.get<User>(this.userData);
   }
 
 }
