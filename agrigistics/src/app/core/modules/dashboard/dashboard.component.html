@@ -49,7 +49,7 @@
           <i class="fas fa-arrow-left flex-item-default position-absolute pt-3 fa-lg"></i>
         </div>
         <div class="flex-fluid-item-90  justify-content-start" >
-            <h3 class="h3">Hannah Smoterich</h3>
+            <h3 class="h3">{{user.firstName}}</h3>
             <div class="flex-fluid">
               <div class="flex-fluid-item-half justify-content-start">
                 No.<br>
@@ -73,7 +73,7 @@
             </div>
             <div class="flex-fluid-item-half text-end">
               <small>Total Earnings</small> <br />
-              <span class="fw-bold">R 13,140.68</span>
+              <span class="fw-bold">{{user.totalDeductions + user.netTotal | currency:'R '}}</span>
             </div>
           </div>
        </div>
@@ -84,8 +84,8 @@
             <img src="assets/icons/chart.svg" alt="Logo" width="54" height="40" />
           </div>
           <div class="flex-fluid-item-half text-end">
-            <small>Total Earnings</small> <br />
-            <span class="fw-bold">R 13,140.68</span>
+            <small>Total Deductions</small> <br />
+            <span class="fw-bold">{{user.totalDeductions | currency:'R '}}</span>
           </div>
         </div>
       </div>
@@ -96,8 +96,8 @@
           <img src="assets/icons/bank.svg" alt="Logo" width="54" height="40" />
         </div>
         <div class="flex-fluid-item-half text-end">
-          <small>Total Earnings</small> <br />
-          <span class="fw-bold">R 13,140.68</span>
+          <small>Net Total</small> <br />
+          <span class="fw-bold">{{user.netTotal | currency:'R '}}</span>
         </div>
       </div>
     </div>
@@ -115,7 +115,7 @@
           </div>
           <div class="flex-fluid-item-half text-end">
             <small>UIF</small> <br />
-            <span class="fw-bold">R 13,140.68</span>
+            <span class="fw-bold">{{user.uif | currency:'R '}}</span>
           </div>
         </div>
      </div>
@@ -127,7 +127,7 @@
         </div>
         <div class="flex-fluid-item-half text-end">
           <small>PAYE</small> <br />
-          <span class="fw-bold">R 13,140.68</span>
+          <span class="fw-bold">{{user.paye | currency:'R '}}</span>
         </div>
       </div>
     </div>
@@ -139,7 +139,7 @@
       </div>
       <div class="flex-fluid-item-half text-end">
         <small>Total</small> <br />
-        <span class="fw-bold">R 13,140.68</span>
+        <span class="fw-bold">{{user.total | currency:'R '}}</span>
       </div>
     </div>
   </div>
@@ -166,93 +166,31 @@
         </div>
         <div class="flex-fluid p-3">
             <div class="col-md-12 overflow-hidden rounded">
-                <table class="table table-hover aggri-table text-left">
-                    <thead class="fw-normal">
-                        <tr>
-                            <th scope="col">&nbsp;</th>
-                            <th scope="col">Name <i class="mx-3 fa-solid fa-arrow-down"></i></th>
-                            <th scope="col">Description</th>
-                            <th scope="col">Type</th>
-                            <th scope="col">Quantity</th>
-                            <th scope="col">Rate</th>
-                            <th scope="col">Action</th>
-                        </tr>
-                        </thead>
-                    <tbody class="border fs-5">
-                      <tr>
-                        <td class="text-end" ><i class="fa-solid ms-3 fa-circle-exclamation"></i></td>
-                        <td class="text-start">1,001</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start fw-bold text-primary">text</td>
-                      </tr>
-                      <tr>
-                        <td class="text-end" ><i class="fa-solid ms-3 fa-circle-exclamation"></i></td>
-                        <td class="text-start">1,001</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start fw-bold text-primary">text</td>
-                      </tr>
-                      <tr>
-                        <td class="text-end" ><i class="fa-solid ms-3 fa-circle-exclamation"></i></td>
-                        <td class="text-start">1,001</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start fw-bold text-primary">text</td>
-                      </tr>
-                      <tr>
-                        <td class="text-end" ><i class="fa-solid ms-3 fa-circle-exclamation"></i></td>
-                        <td class="text-start">1,001</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start fw-bold text-primary">text</td>
-                      </tr>
-                      <tr>
-                        <td class="text-end" ><i class="fa-solid ms-3 fa-circle-exclamation"></i></td>
-                        <td class="text-start">1,001</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start fw-bold text-primary">text</td>
-                      </tr>
-                      <tr>
-                        <td class="text-end" ><i class="fa-solid ms-3 fa-circle-exclamation"></i></td>
-                        <td class="text-start">1,001</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start fw-bold text-primary">text</td>
-                      </tr>
-                      <tr>
-                        <td class="text-end" ><i class="fa-solid ms-3 fa-circle-exclamation"></i></td>
-                        <td class="text-start">1,001</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start fw-bold text-primary">text</td>
-                      </tr>
-                      <tr>
-                        <td class="text-end" ><i class="fa-solid ms-3 fa-circle-exclamation"></i></td>
-                        <td class="text-start">1,001</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start">text</td>
-                        <td class="text-start fw-bold text-primary">text</td>
-                      </tr>
-                    </tbody>
-                  </table>
+              
+            <table class="table table-hover aggri-table text-left">
+              <thead class="fw-normal">
+                  <tr>
+                      <th scope="col">&nbsp;</th>
+                      <th scope="col">Name <i class="mx-3 fa-solid fa-arrow-down"></i></th>
+                      <th scope="col">Description</th>
+                      <th scope="col">Type</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Rate</th>
+                      <th scope="col">Action</th>
+                  </tr>
+                  </thead>
+              <tbody class="border fs-5">
+                <tr  *ngFor="let employee of employees">
+                  <td class="text-end" ><i class="fa-solid ms-3 fa-circle-exclamation"></i></td>
+                  <td class="text-start">{{employee.role}}</td>
+                  <td class="text-start">{{employee.description}}</td>
+                  <td class="text-start">{{employee.type}}</td>
+                  <td class="text-start">{{employee.quantity}}</td>
+                  <td class="text-start">{{employee.rate | currency:'R '}}</td>
+                  <td class="text-start fw-bold text-primary">{{employee.primaryAction}}</td>
+                </tr>
+              </tbody>
+            </table>
             </div>
         </div>
     </div>
