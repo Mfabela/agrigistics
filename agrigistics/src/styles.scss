@@ -29,14 +29,14 @@
       max-height: 100vh;
     }
   
-    .left-sidebar{
+    app-left-bar{
       flex: 0 0 100px;
       background-color:#fff;
       margin: 0px 10px 0px 0px;
     }
   
   
-    .payrolls{
+    app-payroll{
       flex: 320px;
       background-color: #fff;
       margin: 0px 10px 0px 10px;
@@ -44,14 +44,14 @@
       border-radius: 30px;
     }
   
-    .employees{
+    app-employees{
       flex: 1235px;
       background-color: #fff;
       margin: 0px 10px 0px 10px;
       border-radius: 30px;
     }
   
-    .right-sidebar{
+    app-right-bar{
       flex: 0 0 100px;
       background-color: #ededed;
       margin: 0px 0px 0px 10px;
