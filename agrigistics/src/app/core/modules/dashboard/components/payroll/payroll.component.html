@@ -1,0 +1,100 @@
+<div class="payrolls pt-3">
+    <div class="flex-fluid p-3 border-bottom">
+      <div class="flex-fluid-item-10  text-secondary" >
+        <i class="fas fa-arrow-left flex-item-default position-absolute pt-3 fa-lg"></i>
+      </div>
+      <div class="flex-fluid-item-90  justify-content-start" >
+          <h3 class="h3">{{user.firstName}}</h3>
+          <div class="flex-fluid">
+            <div class="flex-fluid-item-half justify-content-start">
+              No.<br>
+              <span class="fw-bold">{{user.number}}</span>
+            </div>
+            <div class="flex-fluid-item-half justify-content-start">
+              Team<br>
+              <span class="fw-bold">{{user.team}}</span>
+            </div>
+          </div>
+      </div>
+  </div>
+  <h5 class="h5 py-3 m-0">Overview</h5>
+
+  <div class="flex-fluid p-3 border rounded">
+
+    <div class="flex-fluid-item-full py-1 justify-content-start" >
+        <div class="flex-fluid">
+          <div class="flex-fluid-item-half justify-content-end">
+            <img src="assets/icons/chartgreen.svg" alt="Logo" width="54" height="40" />
+          </div>
+          <div class="flex-fluid-item-half text-end">
+            <small>Total Earnings</small> <br />
+            <span class="fw-bold">{{user.totalDeductions + user.netTotal | currency:'R '}}</span>
+          </div>
+        </div>
+     </div>
+
+    <div class="flex-fluid-item-full py-1 justify-content-start" >
+      <div class="flex-fluid">
+        <div class="flex-fluid-item-half justify-content-end">
+          <img src="assets/icons/chart.svg" alt="Logo" width="54" height="40" />
+        </div>
+        <div class="flex-fluid-item-half text-end">
+          <small>Total Deductions</small> <br />
+          <span class="fw-bold">{{user.totalDeductions | currency:'R '}}</span>
+        </div>
+      </div>
+    </div>
+ 
+  <div class="flex-fluid-item-full py-1 justify-content-start" >
+    <div class="flex-fluid">
+      <div class="flex-fluid-item-half justify-content-end">
+        <img src="assets/icons/bank.svg" alt="Logo" width="54" height="40" />
+      </div>
+      <div class="flex-fluid-item-half text-end">
+        <small>Net Total</small> <br />
+        <span class="fw-bold">{{user.netTotal | currency:'R '}}</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="flex-fluid p-3 mt-3 border rounded">
+
+  <div class="flex-fluid-item-full py-1 justify-content-start" >
+      <div class="flex-fluid">
+        <div class="flex-fluid-item-half justify-content-end">
+          <img src="assets/icons/note.svg" alt="Logo" width="54" height="40" />
+        </div>
+        <div class="flex-fluid-item-half text-end">
+          <small>UIF</small> <br />
+          <span class="fw-bold">{{user.uif | currency:'R '}}</span>
+        </div>
+      </div>
+   </div>
+
+  <div class="flex-fluid-item-full py-1 justify-content-start" >
+    <div class="flex-fluid">
+      <div class="flex-fluid-item-half justify-content-end">
+        <img src="assets/icons/money.svg" alt="Logo" width="54" height="40" />
+      </div>
+      <div class="flex-fluid-item-half text-end">
+        <small>PAYE</small> <br />
+        <span class="fw-bold">{{user.paye | currency:'R '}}</span>
+      </div>
+    </div>
+  </div>
+
+<div class="flex-fluid-item-full py-1 justify-content-start" >
+  <div class="flex-fluid">
+    <div class="flex-fluid-item-half justify-content-end">
+      <img src="assets/icons/till.svg" alt="Logo" width="54" height="40" />
+    </div>
+    <div class="flex-fluid-item-half text-end">
+      <small>Total</small> <br />
+      <span class="fw-bold">{{user.total | currency:'R '}}</span>
+    </div>
+  </div>
+</div>
+</div>
+</div>

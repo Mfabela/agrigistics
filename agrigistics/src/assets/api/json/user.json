@@ -1,0 +1,22 @@
+{
+    "id":1,
+    "firstName":"Emily",
+    "lastName":"Johnson",
+    "maidenName":"Smith",
+    "age":28,
+    "gender":"male",
+    "email":"emily.johnson@x.dummyjson.com",
+    "phone":"+81 965-431-3024",
+    "username":"emilys",
+    "password":"emilyspass",
+    "birthDate":"1996-5-30",
+    "image":"https://dummyjson.com/icon/emilys/128",
+    "totalEarnings":13140.68,
+    "totalDeductions":12000.00,
+    "netTotal":1140.68,
+    "uif":35.32,
+    "paye":0.00,
+    "total":35.32,
+    "number":"E008",
+    "team":"General Worker"
+ }
