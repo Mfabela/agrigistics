@@ -8,8 +8,8 @@ import { User, Employee } from '../models/user.model';
 })
 export class DataService {
   
-  private userData = 'assets/data/json/user.json';
-  private emplpyeeData = 'assets/data/json/employees.json';
+  private userData = 'assets/api/json/user.json';
+  private emplpyeeData = 'assets/api/json/employees.json';
 
   
 
