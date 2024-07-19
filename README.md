@@ -36,17 +36,17 @@ run "npm install"
 ## Features
 3. 
 
-Services
-Rxjs
-REST Api (JSON)
-Models
-Routing
-Lazy Loading
-Modules /Modularisation
-Components
-Bootstrap CSS
-Font Awesome
-Custom Global CSS
+Services<br />
+Rxjs<br />
+REST Api (JSON)<br />
+Models<br />
+Routing<br />
+Lazy Loading<br />
+Modules /Modularisation<br />
+Components<br />
+Bootstrap CSS<br />
+Font Awesome<br />
+Custom Global CSS<br />
 
 
 ## Project Structure
