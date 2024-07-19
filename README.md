@@ -52,35 +52,35 @@ Custom Global CSS
 ## Project Structure
 4. 
 
-your-angular-project/
-├── src/
-│   ├── app/
-│   │   ├── core/
-│   │   │   ├── modules/
-│   │   │   │   ├── dashboard/
-│   │   │   │   │   ├── dashboard.component.ts
-│   │   │   │   │   ├── dashboard.component.html
-│   │   │   │   │   ├── dashboard.component.scss
-│   │   │   │   │   ├── dashboard.module.ts
-│   │   │   │   └── ├── components
-│   │   ├── shared/
-│   │   │   ├── models/
-│   │   │   │   ├── user.model.ts
-│   │   │   ├── services/
-│   │   │   │   ├── data.service.ts
-│   │   ├── app-routing.module.ts
-│   │   ├── app.component.ts
-│   │   ├── app.component.html
-│   │   ├── app.component.scss
-│   ├── assets/
-│   │   ├── data/
-│   │   │   ├── json/
-│   │   │   │   ├── user.json
-│   │   │   │   ├── employees.json
-│   ├── styles.scss
-├── angular.json
-├── package.json
-├── README.md
+your-angular-project/<br />
+├── src/<br />
+│   ├── app/<br />
+│   │   ├── core/<br />
+│   │   │   ├── modules/<br />
+│   │   │   │   ├── dashboard/<br />
+│   │   │   │   │   ├── dashboard.component.ts<br />
+│   │   │   │   │   ├── dashboard.component.html<br />
+│   │   │   │   │   ├── dashboard.component.scss<br />
+│   │   │   │   │   ├── dashboard.module.ts<br />
+│   │   │   │   └── ├── components<br />
+│   │   ├── shared/<br />
+│   │   │   ├── models/<br />
+│   │   │   │   ├── user.model.ts<br />
+│   │   │   ├── services/<br />
+│   │   │   │   ├── data.service.ts<br />
+│   │   ├── app-routing.module.ts<br />
+│   │   ├── app.component.ts<br />
+│   │   ├── app.component.html<br />
+│   │   ├── app.component.scss<br />
+│   ├── assets/<br />
+│   │   ├── data/<br />
+│   │   │   ├── json/<br />
+│   │   │   │   ├── user.json<br />
+│   │   │   │   ├── employees.json<br />
+│   ├── styles.scss<br />
+├── angular.json<br />
+├── package.json<br />
+├── README.md<br />
 
 
 ## Key Files
