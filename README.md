@@ -84,8 +84,8 @@ your-angular-project/
 
 
 ## Key Files
-app/core/modules/dashboard/: Contains the dashboard module and components.
-app/shared/models/: Defines TypeScript models for user and employee data.
-app/shared/services/: Provides data services to fetch data from JSON files.
-assets/data/json/: Stores JSON data files used in the application.
-styles.scss: Global styles applied across the application.
+app/core/modules/dashboard/: Contains the dashboard module and components.<br />
+app/shared/models/: Defines TypeScript models for user and employee data.<br />
+app/shared/services/: Provides data services to fetch data from JSON files.<br />
+assets/data/json/: Stores JSON data files used in the application.<br />
+styles.scss: Global styles applied across the application.<br />
