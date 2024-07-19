@@ -1,8 +1,8 @@
-# agrigistics
+# Agrigistics
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
 
 
-# agrigistics Project
+# Agrigistics Project
 
 I built this project as an Angular 18 application, demonstrating various functionalities including data fetching services (REST API), models, routing, lazy loading, modularisation, components, Bootstrap CSS, Font Awesome, and global CSS. It includes components, services, and models to handle user and employee data, and features a global CSS setup to ensure consistent styling across the application.
 
